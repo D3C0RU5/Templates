@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500&display=swap');
 
+:root {
+    --color-individual:rgb(50, 51, 56);
+    --color-basic:rgb(162, 93, 220);
+    --color-standard:rgb(0, 133, 255);
+    --color-pro:rgb(0, 162, 91);
+    --color-enterprise:rgb(43, 44, 93);
+}
 html {
     line-height: 1.15;
 }
@@ -42,15 +49,19 @@ body{
     margin: unset;
 }
 
-#table-body .features-list {
-    padding-top: 14px;
-    padding-bottom: 8px;
+#table-body .features-list {    
+/*padding-top: 10px;*/
+/*    padding-bottom: 4px;*/
 }
 
 #table-body .feature-head, #table-body .feature-item{    
     font-size: 13px;
     font-weight: 500;
     line-height: 20px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #table-body .feature-head{
@@ -72,19 +83,19 @@ body{
 }
 
 #table-body .check-individual .fa-check-circle{
-    color: rgb(50, 51, 56);
+    color: var(--color-individual)
 }
 #table-body .check-basic .fa-check-circle{
-    color: rgb(162, 93, 220);
+    color: var(--color-basic)
 }
 #table-body .check-standard .fa-check-circle{
-    color: rgb(0, 133, 255);
+    color: var(--color-standard)
 }
 #table-body .check-pro .fa-check-circle{
-    color: rgb(0, 162, 91);
+    color: var(--color-pro)
 }
 #table-body .check-enterprise .fa-check-circle{
-    color: rgb(43, 44, 93);
+    color: var(--color-enterprise)
 }    
 #table-body .fa-check-circle{
     font-size: 15px;
